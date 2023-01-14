@@ -338,7 +338,7 @@
 
   .title {
     width: 90%;
-    background: url(img/desktop_background.jpg) 100% no-repeat;
+    background: url(images/about-desktop.png) 100% no-repeat;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

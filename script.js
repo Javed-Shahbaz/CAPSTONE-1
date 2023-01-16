@@ -1,15 +1,15 @@
-const opentBtn = document.getElementById('open-Button');
-const closeBtn = document.getElementById('close-Button');
-const sideNav = document.getElementById('sNav');
+const opBtn = document.getElementById('open-Button');
+const cBtn = document.getElementById('close-Button');
+const sNav = document.getElementById('sNav');
 
-opentBtn.addEventListener('click', () => {
-  sideNav.style.width = '100%';
+opBtn.addEventListener('click', () => {
+  sNav.style.width = '100%';
 });
-closeBtn.addEventListener('click', () => {
-  sideNav.style.width = '0';
+cBtn.addEventListener('click', () => {
+  sNav.style.width = '0';
 });
 
-const dataObj = [
+const data_speakers = [
   {
     id: 1,
     name: 'Grey Nguyen',
@@ -59,16 +59,16 @@ const dataObj = [
   },
 ];
 
-const loadMoreBtn = document.getElementById('more-button');
-const speakerCards = document.getElementById('sp-cards');
+const loadBtn = document.getElementById('more-button');
+const spCards = document.getElementById('sp-cards');
 let out = '';
 
-const loadItem = 2;
-const screenSize = window.innerWidth;
+const loadItems = 2;
+const scSize = window.innerWidth;
 window.addEventListener('load', () => {
-  for (let i = 0; i < dataObj.length; i += 1) {
+  for (let i = 0; i < data_speakers.length; i += 1) {
     const element = dataObj[i];
-    if (screenSize < 768 && i < loadItem) {
+    if (scSize < 768 && i < loadItems) {
       out += `
       <div class="sp-card">
         <img src="${element.image}" alt="icon">
@@ -96,12 +96,12 @@ window.addEventListener('load', () => {
   }
   const div = document.createElement('div');
   div.classList.add('sp-grid');
-  speakerCards.insertBefore(div, loadMoreBtn);
+  spCards.insertBefore(div, loadBtn);
   div.innerHTML = out;
 
-  loadMoreBtn.addEventListener('click', () => {
-    for (let i = 0; i < dataObj.length - 2; i += 1) {
-      const element = dataObj[i];
+  loadBtn.addEventListener('click', () => {
+    for (let i = 0; i < data_speakers.length - 2; i += 1) {
+      const element = data_speakers[i];
       out += `
       <div class="sp-card">
       <img src="${element.image}" alt="icon">
@@ -115,6 +115,6 @@ window.addEventListener('load', () => {
       `;
     }
     div.innerHTML = out;
-    loadMoreBtn.style.display = 'none';
+    loadBtn.style.display = 'none';
   });
 });

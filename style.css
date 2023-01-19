@@ -452,7 +452,8 @@ footer {
     width: 500px;
   }
 
-  h1, .heads h1 {
+  h1,
+  .heads h1 {
     font-size: 46px;
     line-height: 56px;
   }

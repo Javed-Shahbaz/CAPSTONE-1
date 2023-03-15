@@ -161,6 +161,8 @@ If you like this project please star in here on Github
 
 <p allign="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- ACKNOWLEDGEMENT -->
+
 ## Acknowledgment 
 - Special Credit to Cindy Chin the author of the original design as required  by Creative Commons license (https://creativecommons.org/licenses/).
 

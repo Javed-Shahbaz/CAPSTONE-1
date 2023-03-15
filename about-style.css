@@ -280,8 +280,8 @@ main {
 }
 
 .pcard-item {
-  max-width: 400px;
   margin: 0 auto;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -324,7 +324,6 @@ main {
 
 .pcard-content {
   margin: 40px 20px;
-  z-index: 20;
 }
 
 /* sponsors section */

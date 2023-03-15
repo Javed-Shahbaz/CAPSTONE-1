@@ -31,7 +31,7 @@ body {
   width: 100px;
 }
 
-.container {
+.Container {
   background: url('images/mobile-intro-bg.png');
   background-position: center;
   background-size: cover;

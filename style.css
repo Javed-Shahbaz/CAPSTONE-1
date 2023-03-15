@@ -31,7 +31,7 @@ body {
   width: 100px;
 }
 
-.Cotainer {
+.Container {
   background: url('images/mobile-intro-bg.png');
   background-position: center;
   background-size: cover;
@@ -176,6 +176,10 @@ body {
   margin: 5px 0;
 }
 
+h1 {
+  font-size: 45px;
+}
+
 .heads h1 {
   font-size: 35px;
   font-weight: 795;
@@ -194,7 +198,7 @@ body {
 
 .MC-cap p {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 35px;
   color: var(--primary);
   border: 1px solid rgb(80, 3, 3);
@@ -454,7 +458,7 @@ footer {
 
   h1,
   .heads h1 {
-    font-size: 46px;
+    font-size: 60px;
     line-height: 56px;
   }
 

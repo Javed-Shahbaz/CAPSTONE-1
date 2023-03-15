@@ -165,7 +165,7 @@ body {
   padding: 50px 0;
 }
 
-.container {
+.Container {
   width: 80%;
   margin: 0 auto;
 }
@@ -200,8 +200,8 @@ h1,
 
 .MC-cap p {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 35px;
   color: var(--primary);
   border: 1px solid rgb(80, 3, 3);
   background-color: #f8f8f8;
@@ -455,7 +455,7 @@ footer {
   .heads,
   .MC-cap,
   .date {
-    width: 500px;
+    width: 900px;
   }
 
   h1,

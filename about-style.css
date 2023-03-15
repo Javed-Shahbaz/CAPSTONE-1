@@ -25,15 +25,14 @@ a {
 
 body {
   font-family: 'lato', sans-serif;
-  text-align: center;
 }
 
 .blogo {
   width: 100px;
 }
 
-.ontainer {
-  background: url('./images/mobile-intro-bg.png');
+.container {
+  background: url('images/mobile-intro-bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,7 +42,6 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 30px 0;
-  text-align: left;
 }
 
 #open-Button {
@@ -56,7 +54,6 @@ body {
 
 .snav {
   height: 100%;
-  text-align: left;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -67,6 +64,10 @@ body {
   transition: 0.5s;
 }
 
+.Button a {
+  display: none;
+}
+
 .snav ul li a {
   padding: 8px 32px;
   font-size: 25px;
@@ -75,29 +76,32 @@ body {
   transition: 0.3s;
 }
 
-.dtopnav-items ul li a {
+.dtopNav ul li a {
   font-weight: 700;
-  font-size: 13px;
-  line-height: 17px;
-  color: #868686;
-  transition: 0.3s;
+  font-size: 18px;
+  line-height: 19px;
+  color: black;
+  transition: 0.2s;
 }
 
 .snav ul li a:hover {
-  color: var(--graish);
+  color: yellowgreen;
 }
 
-/* stylelint instructions start */
-.cards img {
-  width: 200px;
+.sp-card img {
+  height: 100px;
+  width: 100px;
+}
+
+.sp-button button img {
+  margin-left: 10px;
+  height: 8px;
 }
 
 .topNav ul li a img {
   height: 18px;
   width: 18px;
 }
-
-/* stylelint instructions end */
 
 .snav .c-btn img {
   height: 40px;
@@ -112,13 +116,13 @@ body {
 }
 
 .topNav ul {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   color: white;
-  gap: 20px;
+  gap: 35px;
   padding: 6px;
   font-size: 14px;
 }
@@ -127,7 +131,7 @@ body {
   display: none;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 10px 0;
 }
@@ -139,19 +143,19 @@ body {
   justify-content: center;
 }
 
-.dtopNav-items ul li a:hover {
-  color: var(--secondary);
+.dtopNav ul li a:hover {
+  color: yellowgreen;
 }
 
 .camp-button {
   border: 4px solid var(--secondary);
   padding: 6px;
-  color: var(--secondary) !important;
+  color: #ec5242 !important;
   transition: 0.5s;
 }
 
 .camp-button:hover {
-  background-color: var(--secondary);
+  background-color: goldenrod;
   color: #fff !important;
 }
 
@@ -194,17 +198,19 @@ body {
 }
 
 .date p {
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 40px;
-  color: #868686;
+  color: #050000;
+  text-align: center;
 }
 
 .date h4 {
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
   text-decoration: underline;
+  text-align: center;
 }
 
 /* main-section */
@@ -219,20 +225,22 @@ main {
   padding: 30px 0;
 }
 
-.m-head h3 {
+.heads h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
+  text-align: center;
 }
 
-.m-head p {
+.heads p {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   color: #838383;
+  text-align: center;
 }
 
-.m-head hr {
+.heads hr {
   border: 1px solid var(--secondary);
   width: 20px;
   margin: 15px auto;
@@ -362,7 +370,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 40px;
 }
 
@@ -379,13 +387,16 @@ main {
 
 .foot-content p {
   margin: 10px 0;
-  font-weight: 700;
+  font-weight: 800;
 }
-
 /* desktop version - 768px wider */
 @media screen and (min-width: 768px) {
   .mobnav {
     display: none;
+  }
+
+  .topNav {
+    display: block;
   }
 
   header {
@@ -393,10 +404,6 @@ main {
     position: relative;
     top: 0;
     background: white;
-  }
-
-  .topNav {
-    display: block;
   }
 
   .dtopNav {
@@ -414,13 +421,15 @@ main {
   .heads,
   .MC-caption,
   .date {
-    width: 630px;
+    width: 750px;
     margin: 30px auto;
   }
 
   .heads h1 {
-    font-size: 45px;
-    line-height: 48px;
+    font-size: 60px;
+    line-height: 56px;
+    align-content: center;
+    text-align: center;
   }
 
   .heads p {
@@ -442,14 +451,43 @@ main {
   footer {
     background-color: var(--primary);
     color: white;
+    align-items: flex-end;
   }
 
   .foot-items {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: flex-end;
     padding: 40px;
   }
+  .post h3 {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 35px;;
+    text-align: center;
+  }
+  
+  .post p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    color: black;
+  }
+  
+  .post hr {
+    border: 1px solid var(--secondary);
+    width: 20px;
+    margin: 15px auto;
+  }
+  
+  footer {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+
 }

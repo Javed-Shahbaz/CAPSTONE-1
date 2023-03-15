@@ -232,14 +232,6 @@ main {
   text-align: center;
 }
 
-.heads p {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  color: #838383;
-  text-align: center;
-}
-
 .heads hr {
   border: 1px solid var(--secondary);
   width: 20px;
@@ -389,6 +381,7 @@ main {
   margin: 10px 0;
   font-weight: 800;
 }
+
 /* desktop version - 768px wider */
 @media screen and (min-width: 768px) {
   .mobnav {
@@ -467,21 +460,21 @@ main {
     line-height: 35px;;
     text-align: center;
   }
-  
+
   .post p {
     font-weight: 600;
     font-size: 20px;
     line-height: 35px;
     color: black;
   }
-  
+
   .post hr {
     border: 1px solid var(--secondary);
     width: 20px;
     margin: 15px auto;
   }
-  
-  footer {
+
+  .footr {
     width: 95%;
     margin: 0 auto;
     display: flex;
@@ -489,5 +482,4 @@ main {
     align-items: center;
     padding: 40px;
   }
-
 }

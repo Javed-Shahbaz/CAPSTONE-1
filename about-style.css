@@ -381,7 +381,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  color:#272a31;
+  color: #272a31;
   background-color: #d3d3d3;
   justify-content: space-between;
   padding: 30px;
@@ -392,7 +392,7 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   text-align: right;
   gap: 15px;
   padding: 30px 0;
@@ -495,7 +495,7 @@ footer {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    color:#272a31;
+    color: #272a31;
     background-color: #d3d3d3;
     justify-content: center;
     padding: 30px;

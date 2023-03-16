@@ -1,0 +1,544 @@
+@font-face {
+  font-family: 'lato';
+  src: url('./fonts/Lato-Regular.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #272a31;
+  --secondary: #ec5242;
+  --graish: #d3d3d3;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'lato', sans-serif;
+}
+
+.blogo {
+  width: 100px;
+  margin-left: 6em;
+}
+
+.Container {
+  background: url('images/mobile-intro-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mobhead {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#open-Button {
+  width: 40px;
+}
+
+.invisible-hamburger {
+  visibility: hidden;
+}
+
+.snav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #272a31;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.Button a {
+  display: none;
+}
+
+.snav ul li a {
+  padding: 8px 32px;
+  font-size: 25px;
+  color: var(--secondary);
+  display: block;
+  transition: 0.3s;
+}
+
+.dtopNav ul li a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+  color: black;
+  transition: 0.2s;
+}
+
+.snav ul li a:hover {
+  color: yellowgreen;
+}
+
+.sp-card img {
+  height: 100px;
+  width: 100px;
+}
+
+.sp-button button img {
+  margin-left: 10px;
+  height: 8px;
+}
+
+.topNav ul li a img {
+  height: 18px;
+  width: 18px;
+}
+
+.snav .c-btn img {
+  height: 40px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+/* navigation bar for desktop */
+.topNav {
+  background-color: #3e3e3e;
+  display: none;
+}
+
+.topNav ul {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  gap: 35px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.dtopNav {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.dtopNav-items ul {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dtopNav ul li a:hover {
+  color: yellowgreen;
+}
+
+.camp-button {
+  border: 4px solid var(--secondary);
+  padding: 6px;
+  color: #ec5242 !important;
+  transition: 0.5s;
+}
+
+.camp-button:hover {
+  background-color: goldenrod;
+  color: #fff !important;
+}
+
+/* main */
+
+.MC {
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.heads p {
+  color: #ec5242;
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+.heads h1 {
+  font-size: 35px;
+  font-weight: 795;
+  line-height: 56px;
+  margin: 0;
+  text-align: justify;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.MC-cap {
+  margin: 35px 0;
+}
+
+.MC-cap p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: var(--primary);
+  border: 1px solid rgb(80, 3, 3);
+  background-color: #f8f8f8;
+  padding: 18px;
+  margin: 30px 0;
+}
+
+.date h2 {
+  font-weight: 750;
+  font-size: 25px;
+  line-height: 27px;
+  color: #c90808;
+  margin: 15px 0;
+  padding-top: 40;
+}
+
+.date h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  color: #1e0234;
+}
+
+/* main-section */
+
+main {
+  background: url('images/main-pattern-bg.png'), #282b32;
+  background-position: center;
+  color: white;
+  padding: 30px 0;
+}
+
+.main-prog h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-prog hr {
+  border: 1px solid var(--secondary);
+  width: 45px;
+  margin: 15px auto;
+}
+
+.Cards {
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card {
+  background-color: rgba(60, 63, 70, 0.4);
+  padding: 10px;
+  display: flex;
+  justify-content: justify;
+  align-items: center;
+  gap: 20px;
+}
+
+.card h4 {
+  width: 25%;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--secondary);
+}
+
+.card p {
+  width: 50%;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.Button {
+  text-align: center;
+}
+
+.Button button {
+  background: var(--secondary);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  padding: 20px 50px;
+  border: none;
+}
+
+/* featured speaker */
+.presenter {
+  padding: 30px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pres-head h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pres-head hr {
+  border: 1px solid var(--secondary);
+  width: 45px;
+  margin: 15px auto;
+}
+
+.sp-grid {
+  margin: 40px 12px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.sp-card {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.sp-card-content h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.sp-card-content p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.sp-card-content hr {
+  border: 1px solid var(--graish);
+  width: 30px;
+  margin: 12px 0;
+}
+
+.sp-card-content small {
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 14px;
+}
+
+.sp-button {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.sp-button button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 20px 0;
+  padding: 12px 0;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background-color: white;
+  width: 100%;
+}
+
+.partners {
+  padding: 20px 0;
+  background-color: #414246;
+  display: none;
+}
+
+.part-body {
+  width: 95%;
+  margin: 2px auto;
+}
+
+.part-head {
+  margin-bottom: 30px;
+}
+
+.part-head h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  color: var(--graish);
+}
+
+.part-head hr {
+  border: 1px solid var(--secondary);
+  width: 40px;
+  margin: 20px auto;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+footer {
+  display: none;
+}
+
+.foot-content p {
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+/* desktop version - 768px wider */
+@media screen and (min-width: 768px) {
+  .mobnav {
+    display: none;
+  }
+
+  .topNav {
+    display: block;
+  }
+
+  header {
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+    position: relative;
+    top: 0;
+    background: white;
+  }
+
+  .dtopNav {
+    display: flex;
+  }
+
+  .MC {
+    background: url('images/hero-desktop-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+  }
+
+  .heads,
+  .MC-cap,
+  .date {
+    width: 100%;
+  }
+
+  h1,
+  .heads h1 {
+    font-size: 60px;
+    line-height: 56px;
+  }
+
+  .heads p {
+    font-size: 35px;
+    line-height: 36px;
+  }
+
+  .Cards {
+    flex-direction: row;
+    gap: 30px;
+    width: 96%;
+    margin: 35px auto;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+    border: 2px solid transparent;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+  .card h4 {
+    width: 100%;
+  }
+
+  .card h6 {
+    width: 100%;
+    font-size: 11px;
+    color: var(--graish);
+  }
+
+  .Button button {
+    display: none;
+  }
+
+  .Button a {
+    color: greenyellow;
+    text-decoration: underline;
+    margin: 25px 0;
+    display: block;
+  }
+
+  .presenter {
+    width: 80%;
+  }
+
+  .sp-button {
+    display: none;
+  }
+
+  .sp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners {
+    display: block;
+  }
+
+  .part-body {
+    width: 95%;
+    margin: 2px auto;
+  }
+
+  footer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    color: rgb(15, 14, 14);
+    background-color: white;
+    justify-content: center;
+    gap: 3em;
+    padding: 30px;
+  }
+}

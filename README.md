@@ -47,7 +47,8 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
+- **The home page.**
+- **The about page.**
 -   **It is helpful in understanding the basics of a portfolio**
 -   **This project provide modern approach toward the web development.
 
@@ -117,7 +118,9 @@ Example command:
 
 ### Deployment
 
-https://javed-shahbaz.github.io/CAPSTONE-1/
+[Live Demo](https://javed-shahbaz.github.io/CAPSTONE-1/)
+
+[Loom Video Presentation](https://www.loom.com/share/b66dceb9c54a4c74832e7c83d8ae5091)
 <!--
 Example:
 
@@ -146,7 +149,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Javed-Shahbaz/CAPSTONE-1/issues).
 
 <p allign="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,6 +160,11 @@ Feel free to check the [issues page](../../issues/).
 If you like this project please star in here on Github
 
 <p allign="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENT -->
+
+## Acknowledgment 
+- Special Credit to Cindy Chin the author of the original design as required  by Creative Commons license (https://creativecommons.org/licenses/).
 
 <!-- LICENSE -->
 

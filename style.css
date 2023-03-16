@@ -453,7 +453,7 @@ footer {
   .heads,
   .MC-cap,
   .date {
-    width: 900px;
+    width: 100%;
   }
 
   h1,
@@ -526,11 +526,10 @@ footer {
   }
 
   footer {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+    justify-content: space-around;
+    padding: 30px;
   }
 }

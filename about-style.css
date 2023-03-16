@@ -243,6 +243,8 @@ main {
   border: 2px solid #f0f0f0;
   margin: 20px auto;
   max-width: 400px;
+  display: flex;
+  align-items: center;
 }
 
 /* post section */
@@ -358,7 +360,7 @@ main {
   margin: 15px auto;
 }
 
-.brands {
+.blogo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -366,12 +368,22 @@ main {
   gap: 40px;
 }
 
+footer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  color:#272a31;
+  background-color: #d3d3d3;
+  justify-content: space-between;
+  padding: 30px;
+}
+
 .foot-items {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   text-align: right;
   gap: 15px;
   padding: 30px 0;
@@ -379,7 +391,7 @@ main {
 
 .foot-content p {
   margin: 10px 0;
-  font-weight: 800;
+  font-weight: 300;
 }
 
 /* desktop version - 768px wider */
@@ -441,20 +453,6 @@ main {
     display: none;
   }
 
-  footer {
-    background-color: var(--primary);
-    color: white;
-    align-items: flex-end;
-  }
-
-  .foot-items {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 40px;
-  }
-
   .post h3 {
     font-weight: 800;
     font-size: 25px;
@@ -475,12 +473,13 @@ main {
     margin: 15px auto;
   }
 
-  .footr {
-    width: 95%;
+  footer {
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    color:#272a31;
+    background-color: #d3d3d3;
     justify-content: center;
-    align-items: center;
-    padding: 40px;
+    padding: 30px;
   }
 }

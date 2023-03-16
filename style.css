@@ -408,9 +408,9 @@ main {
 .brands {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: nowrap;
-  gap: 50px;
+  gap: 30px;
 }
 
 footer {
@@ -526,11 +526,20 @@ footer {
     display: block;
   }
 
+  .part-body {
+    width: 95%;
+    margin: 2px auto;
+  }
+
   footer {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    color: rgb(15, 14, 14);
+    background-color: white;
+    justify-content: center;
+    gap: 3em;
     padding: 30px;
   }
+
 }

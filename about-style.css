@@ -27,10 +27,6 @@ body {
   font-family: 'lato', sans-serif;
 }
 
-.blogo {
-  width: 100px;
-}
-
 .Container {
   background: url('images/mobile-intro-bg.png');
   background-position: center;
@@ -192,9 +188,10 @@ body {
 
 .MC-caption p {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 25px;
   padding: 20px;
+  text-align: justify;
 }
 
 .date p {
@@ -244,6 +241,7 @@ main {
   margin: 20px auto;
   max-width: 400px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -255,15 +253,17 @@ main {
 }
 
 .post h3 {
-  font-weight: 800;
-  font-size: 25px;
+  font-weight: 600;
+  font-size: 1.5em;
   line-height: 35px;
+  text-align: center;
 }
 
 .post p {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 35px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
   color: black;
 }
 
@@ -326,6 +326,14 @@ main {
 
 .pcard-content {
   margin: 40px 20px;
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.past {
+  width: 350px;
 }
 
 /* sponsors section */
@@ -333,6 +341,7 @@ main {
   padding: 30px 0;
   background-color: #414246;
   display: block;
+  height: auto;
 }
 
 .part-body {
@@ -360,11 +369,11 @@ main {
   margin: 15px auto;
 }
 
-.blogo {
+.brands {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -392,6 +401,7 @@ footer {
 .foot-content p {
   margin: 10px 0;
   font-weight: 300;
+  text-align: center;
 }
 
 /* desktop version - 768px wider */
@@ -458,6 +468,14 @@ footer {
     font-size: 25px;
     line-height: 35px;
     text-align: center;
+  }
+
+  .pcard-content {
+    margin: 40px 20px;
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .post p {
